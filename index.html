@@ -849,7 +849,28 @@
   animation: fadeIn 0.3s ease;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3); /* thêm chiều sâu */
 }
+/* --- Nội dung mô tả dự án --- */
+.modal-content p {
+  color: #444; /* xám đậm, dễ đọc */
+  line-height: 1.6;
+  margin: 8px 0;
+  position: relative;
+  padding-left: 16px; /* chừa chỗ cho dấu chấm */
+}
 
+.modal-content p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #000; /* chấm đen cho nổi bật */
+  font-weight: bold;
+}
+
+.modal-content strong {
+  color: #000; /* tiêu đề như “Mô tả” và “Công nghệ” in đậm đen */
+  font-weight: 600;
+}
 /* Close button */
 .close-modal {
   float: right;
