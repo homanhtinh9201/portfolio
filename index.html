@@ -824,7 +824,7 @@
 
 <!-- STYLES -->
 <style>
- /* Modal Overlay */
+/* Modal Overlay */
 .modal {
   display: none;
   position: fixed;
@@ -833,29 +833,29 @@
   left: 0; top: 0;
   width: 100%; height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6); /* nhẹ hơn một chút */
-  backdrop-filter: blur(3px); /* vẫn giữ cảm giác mờ nền nhẹ */
+  background-color: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(3px);
 }
 
 /* Nội dung Modal */
 .modal-content {
-  background: rgba(255, 255, 255, 0.98); /* gần như trắng, không trong suốt */
-  color: #444; /* chữ đen rõ */
+  background: rgba(255, 255, 255, 0.98); 
   margin: auto;
   padding: 24px;
   border-radius: 12px;
   width: 80%;
   max-width: 800px;
   animation: fadeIn 0.3s ease;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3); /* thêm chiều sâu */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  color: #555; /* chữ xám cho nội dung */
 }
-/* --- Nội dung mô tả dự án --- */
+
+/* Nội dung mô tả dự án */
 .modal-content p {
-  color: #444; /* xám đậm, dễ đọc */
   line-height: 1.6;
   margin: 8px 0;
   position: relative;
-  padding-left: 16px; /* chừa chỗ cho dấu chấm */
+  padding-left: 16px; 
 }
 
 .modal-content p::before {
@@ -863,14 +863,15 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #000; /* chấm đen cho nổi bật */
+  color: #000; 
   font-weight: bold;
 }
 
 .modal-content strong {
-  color: #000; /* tiêu đề như “Mô tả” và “Công nghệ” in đậm đen */
+  color: #000; 
   font-weight: 600;
 }
+
 /* Close button */
 .close-modal {
   float: right;
@@ -883,7 +884,7 @@
   color: #000;
 }
 
-/* Ảnh & text */
+/* Ảnh & tiêu đề */
 .modal img {
   max-width: 100%;
   border-radius: 10px;
@@ -894,34 +895,27 @@
   margin-top: 0;
   color: #000;
 }
-
-.modal p, .modal strong, .modal a {
-  color: #000 !important; /* đảm bảo text luôn rõ */
-}
-
 </style>
 
 <!-- SCRIPT -->
 <script>
-  const projectDetails = {
-    project1: `
-      <h3>Industrial Data Logger 4G</h3>
-      <div class="project-details text-red">
-        <p><strong>Mô tả:</strong> Thiết bị thu thập dữ liệu công nghiệp dùng pin tiết kiệm năng lượng, đọc cảm biến 4–20mA, Modbus và đếm xung, gửi dữ liệu qua mạng di động 4G.</p>
-        <br>
-        <p><strong>Công nghệ:</strong> Tiết kiệm năng lượng, 4G Cat1/NB, BLE.</p>
+const projectDetails = {
+  project1: `
+    <h3>Industrial Data Logger 4G</h3>
+    <div class="project-details">
+      <p><strong>Mô tả:</strong> Thiết bị thu thập dữ liệu công nghiệp dùng pin tiết kiệm năng lượng, đọc cảm biến 4–20mA, Modbus và đếm xung, gửi dữ liệu qua mạng di động 4G.</p>
+      <p><strong>Công nghệ:</strong> Tiết kiệm năng lượng, 4G Cat1/NB, BLE.</p>
 
-        <p><strong>Ảnh thiết kế:</strong></p>
-        <img src="./assets/images/Logger2D.png" alt="PCB Design 2D" class="rounded-xl shadow-md mb-2">
-        <img src="./assets/images/G103Rev4.2H3D.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2">
+      <p><strong>Ảnh thiết kế:</strong></p>
+      <img src="./assets/images/Logger2D.png" alt="PCB Design 2D" class="rounded-xl shadow-md mb-2">
+      <img src="./assets/images/G103Rev4.2H3D.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2">
 
-        <p><strong>Ảnh thực tế:</strong></p>
-        <img src="./assets/images/G103Rev4.2H.png" alt="Thực tế sản phẩm" class="rounded-xl shadow-md mb-2">
+      <p><strong>Ảnh thực tế:</strong></p>
+      <img src="./assets/images/G103Rev4.2H.png" alt="Thực tế sản phẩm" class="rounded-xl shadow-md mb-2">
 
-        <p><strong>Link demo:</strong> <a href="#" class="text-blue-600 underline hover:text-blue-800">Xem chi tiết</a></p>
-      </div>
-    `,
-
+      <p><strong>Link demo:</strong> <a href="#" class="text-blue-600 underline hover:text-blue-800">Xem chi tiết</a></p>
+    </div>
+  `,
     project2: `
       <h3>Automotive CAN-FD Gateway</h3>
       <p><strong>Mô tả:</strong> Gateway trung gian giữa các ECU trên xe, hỗ trợ CAN-FD và Ethernet để ghi log dữ liệu.</p>
