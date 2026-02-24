@@ -458,8 +458,8 @@
               <p class="timeline-text">Experienced in low-power circuit design and wireless communications for IoT applications, including BLE, 4G, GPS, Wi-Fi, LoRa, and Zigbee.</p>
               <p class="timeline-text">Experienced with standard industrial communication protocols such as RS485, RS422, CAN, 4–20 mA, and 0–10 V.</p>
               <p class="timeline-text">Experienced with microprocessors/microcontrollers and interfaces including SPI, I²C, UART, RMII/MII, FSMC/FMC, and LTDC.</p>
-              <p class="timeline-text">Experienced in designing carrier boards for SoM, SoC, and mini PC platforms, including high-speed designs with memory, PCIe, MIPI, USB 3.0, HDMI, and Ethernet.</p>
-              <p class="timeline-text">Experienced in firmware programming for hardware functional testing and validation.</p>            
+              <p class="timeline-text">Experienced in designing carrier boards for SoM, SoC, including high-speed designs with memory, PCIe, MIPI, USB 3.0, HDMI, and Ethernet.</p>
+                          
             </li>           
           </ol>
         
@@ -597,6 +597,7 @@
       <li class="filter-item"><button data-filter-btn>FPGA</button></li>
       <li class="filter-item"><button data-filter-btn>SoM</button></li>
       <li class="filter-item"><button data-filter-btn>UAV & Drone</button></li>
+       <li class="filter-item"><button data-filter-btn>Led Driver</button></li>
     </ul>
 
     <!-- FILTER SELECT BOX (mobile) -->
@@ -613,6 +614,7 @@
         <li class="select-item"><button data-select-item>FPGA</button></li>
         <li class="select-item"><button data-select-item>SoM</button></li>
         <li class="select-item"><button data-select-item>UAV & Drone</button></li>
+          <li class="select-item"><button data-select-item>Led Driver</button></li>
       </ul>
     </div>
 
@@ -880,7 +882,45 @@
       <p class="project-category">SoM</p>
     </a>
   </li> 
-
+<!-- Project21 -->
+      <li class="project-item active" data-filter-item data-category="som" data-project="project21">
+    <a href="#" class="open-project">
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        <img src="./assets/images/FPGA_SOM0.png" alt="FPGA_SOM0" loading="lazy">
+      </figure>
+      <h3 class="project-title">SoM FPGA ATX7</h3>
+      <p class="project-category">SoM</p>
+    </a>
+  </li> 
+  <!-- Project22 -->
+      <li class="project-item active" data-filter-item data-category="iot" data-project="project22">
+    <a href="#" class="open-project">
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        <img src="./assets/images/modbus0.png" alt="modbus0" loading="lazy">
+      </figure>
+      <h3 class="project-title">IoT Gateway Modbus</h3>
+      <p class="project-category">IoT</p>
+    </a>
+  </li> 
+  <!-- Project23 -->
+      <li class="project-item active" data-filter-item data-category="led driver" data-project="project23">
+    <a href="#" class="open-project">
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        <img src="./assets/images/Led0.png" alt="Led" loading="lazy">
+      </figure>
+      <h3 class="project-title">Led Driver 12V/60W</h3>
+      <p class="project-category">Led Driver</p>
+    </a>
+  </li> 
 
 
 
@@ -1568,6 +1608,69 @@ const projectDetails = {
         <img src="./assets/images/SoM1.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="width: 70%; display: block; margin: 0 auto;">
         <img src="./assets/images/SoM2.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
         <img src="./assets/images/SoM3.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
+      </div>
+      `,
+      project21: `
+        <h3>SoM FPGA ATX7</h3>
+        <div class="project-details">
+        <p><strong>Description:</strong> "The SoM FPGA ATX7 System-on-Module (SoM) combines high-end AMD Artix 7 series device with fast DDR3 SDRAM, parallel Quad-SPI Flash and thus forms a complete and powerful embedded processing system. This module is suitable for high-speed applications.</p>
+        <p><strong>Specifications:</strong></p>
+        <ul class="feature-list">
+        <li> Processor: Artix 7 XC7A35T/100T/200T.</li>
+        <li> Memory: 1 GByte (32-bit) DDR3 SDRAM, 16 MB QSPI Flash.</li>
+        <li> PCIe: 1 x PCIe® Gen2 .</li>
+        <li> I/O:  FPGA I/Os 180 3.3V + 15 1.5V</li>
+        </ul>
+        <p><strong>Image:</strong></p>
+        <img src="./assets/images/FPGA_SOM.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="width: 68%; display: block; margin: 0 auto;">
+        <img src="./assets/images/FPGA_SOM1.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
+        <img src="./assets/images/FPGA_SOM2.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
+      </div>
+      `,
+      project22: `
+        <h3>IoT Gateway Modbus</h3>
+        <div class="project-details">
+        <p><strong>Description:</strong> "The IoT Gateway Modbus is a embedded system designed for industrial automation and smart building applications. It supports multiple communication protocols including Modbus RTU/TCP, MQTT, and HTTP, enabling seamless integration with various industrial devices and cloud platforms.</p>
+        <p><strong>Specifications:</strong></p>
+        <ul class="feature-list">
+        <li> Processor: ESP32C5.</li>
+        <li> Wifi: Dual Band 2.4GHz and 5GHz.</li>
+        <li> Ethernet: 10 / 100M RJ45 connector, 2 KV surge protection .</li>
+        <li> Rs485: Isolated RS485</li>
+        <li> Digital Input: 4x input Opto.</li>
+        <li> ADC: 2x 4-20mA/0-10V.</li>
+        <li> Power Supply: 5-30VDC.</li>
+        
+        </ul>
+        <p><strong>Image:</strong></p>
+        <img src="./assets/images/modbus2d.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="width: 68%; display: block; margin: 0 auto;">
+        <img src="./assets/images/modbus1.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
+        <img src="./assets/images/modbus2.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
+      </div>
+      `,
+      project23: `
+        <h3>60W Led Driver 12V/5A </h3>
+        <div class="project-details">
+        <p><strong>Description:</strong> "The 60W Led Driver 12V/5A is a high-efficiency LED driver designed for powering high-power LED arrays. It features constant current output, over-voltage protection, and thermal shutdown to ensure safe and reliable operation in various lighting applications.</p>
+        <p><strong>Specifications:</strong></p>
+        <ul class="feature-list">
+        <li> Input: 90 VAC – 265 VAC.</li>
+        <li> Output: 60W-12VDC/5A Isolated.</li>
+        <li> Driver: InnoSwitch™3-EP .</li>
+        <li> Topology: Flyback, Secondary Side SR</li>
+        <li> Freq Switching: 65kHz.</li>
+        <li> Fault Protection: Current Limiting, Over Load, Over Temperature, Over Voltage, Short Circuit.</li>
+        
+        </ul>
+        <p><strong>Image:</strong></p>
+        <img src="./assets/images/led1.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="width: 68%; display: block; margin: 0 auto;">
+        <img src="./assets/images/led2.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
+        <img src="./assets/images/led3.png" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
+        <img src="./assets/images/led4.jpg" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2" style="display: block; margin: 0 auto;">
+        <img src="./assets/images/led5.jpg" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2">
+        <img src="./assets/images/led6.jpg" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2">
+        <img src="./assets/images/led7.jpg" alt="PCB Design 3D" class="rounded-xl shadow-md mb-2">
+        
       </div>
       `,
   };
